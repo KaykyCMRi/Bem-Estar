@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "Lobster";
+    src: url("../assets/fonts/Lobster-Regular.ttf");
+}
+*{
+    font-family: 'Lobster';
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url('../assets/images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgba(27, 150, 46, 0.582);
+    align-items: center;
+    justify-content: space-around;
+}
+.container-logo{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.logo{
+    width: 40%;
+    padding: 5px;
+}
+.container-pesquisa{
+    display: flex;
+    width: 16%;
+    border-radius:25px ;
+    background-color: rgb(255, 255, 255);
+}
+.input-pesquisa{
+    width: 500%;
+    margin:5px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+.button-pesquisa{
+    background-color: transparent;
+    border: none;
+}
+.icon-pesquisa{
+    cursor: pointer;
+    width: 50%;
+}
+.container-menu{
+    width: 50%;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+.item-menu{
+    color: white;
+    padding:15px;
+    border-radius: 20px;
+}
+.item-menu:hover{ /* :hover ativa o estilo quando o mouse estiver em cima do componente*/
+    cursor: pointer;
+    color: black;
+    background-color: rgba(57, 136, 20, 0.8);
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.container-conteudo{
+    padding: 20px;
+}
+.title{
+    color: rgba(57, 136, 20, 0.8);
+    margin: 15px;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conteudo{
+    font-family: sans-serif;  
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.alimentos-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.categorias{
+    display: flex;
+    flex-direction: row;
+    list-style: none   ;
+}
+.title-alimentos{
+    color: rgba(57, 136, 20, 1);
+    margin:20px;
+    text-align: center;
+}
+.categoria-img{
+    border: 2px solid rgba(57, 136, 20, 1);
+    margin:1vw;
+    box-shadow: 2px 2px 2px black;
+    transition: transform 0.2s ease-in-out;
+}
+.categoria-img:hover{
+    transform: translate(0, -10px);
+    border: 2px solid rgba(20, 54, 4, 0.8);
+    margin:1vw;
+}
+hr {
+    border: none; 
+    height: 1px; 
+    background-color: #000; 
+    margin: 20px 0; 
+  }
