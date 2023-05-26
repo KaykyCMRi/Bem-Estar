@@ -119,7 +119,7 @@ body{
     border: 2px solid rgba(20, 54, 4, 0.8);
     margin:1vw; /* uso de Vw para acompanhar o tamanho da tela (VW = Viewport Width)*/
 }
-hr {
+hr {        /* Estilo do separador (linha horizontal após o conteúdo)*/
     border: none; 
     height: 1px; 
     background-color: #000; 
