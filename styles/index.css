@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Lobster";
-    src: url("./fonts/Lobster-Regular.ttf");
+    src: url("../fonts/Lobster-Regular.ttf");
 }
 *{
     font-family: 'Lobster';
@@ -15,13 +15,13 @@ body{
 .cabecalho{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 100%;  
     background-color: rgba(27, 150, 46, 0.582);
     align-items: center;
     justify-content: space-around;
 }
 .container-logo{
-    width: 20%;
+    width: 20%; 
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -89,7 +89,7 @@ body{
     font-family: sans-serif;  
     font-weight: bold;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.5; /* espaçamento entre linnhas */
     margin-bottom: 10px;
     text-align: center;
 }
@@ -110,14 +110,14 @@ body{
 }
 .categoria-img{
     border: 2px solid rgba(57, 136, 20, 1);
-    margin:1vw;
+    margin:1vw;/* uso de Vw para acompanhar o tamanho da tela (VW = Viewport Width)*/
     box-shadow: 2px 2px 2px black;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out; /*propriedade de transição adiciona um efeito tranform para ser mannipulado no :hover */
 }
 .categoria-img:hover{
-    transform: translate(0, -10px);
+    transform: translate(0, -10px); /* propriedade transform criada no transition, movimenta o componente nos eixos (X,Y) Y = -10pixels  */
     border: 2px solid rgba(20, 54, 4, 0.8);
-    margin:1vw;
+    margin:1vw; /* uso de Vw para acompanhar o tamanho da tela (VW = Viewport Width)*/
 }
 hr {
     border: none; 
@@ -125,3 +125,4 @@ hr {
     background-color: #000; 
     margin: 20px 0; 
   }
+
